@@ -1,0 +1,27 @@
+{
+  "id": "SC_VC_01",
+  "zoneId": "DigitalHealth",
+  "sdg": 3,
+  "startBudget": 60000,
+  "rate": 6,
+  "phases": [
+    {
+      "id": "PH_VC_01",
+      "name": "Discovery Phase",
+      "choices": ["P_VC_1_1", "P_VC_1_2", "P_VC_1_3", "P_VC_1_4"],
+      "eventId": "E_VC_01"
+    },
+    {
+      "id": "PH_VC_02",
+      "name": "Development Phase",
+      "choices": ["P_VC_2_1", "P_VC_2_2", "P_VC_2_3", "P_VC_2_4"],
+      "eventId": "E_VC_02"
+    },
+    {
+      "id": "PH_VC_03",
+      "name": "Partnership & Deployment",
+      "choices": ["P_VC_3_1", "P_VC_3_2", "P_VC_3_3", "P_VC_3_4"],
+      "eventId": "E_VC_03"
+    }
+  ]
+}
