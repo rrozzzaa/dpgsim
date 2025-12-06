@@ -4,24 +4,93 @@
   "sdg": 3,
   "startBudget": 60000,
   "rate": 6,
+
+  "events": {
+    "E_VC_01": {
+      "title": "Field Trip to Villages",
+      "description": "You travel to remote villages to understand how people access healthcare. You interview locals, nurses, and the only doctor in the area."
+    },
+    "E_VC_02": {
+      "title": "Connectivity Challenge",
+      "description": "You discover that many villages only have weak 2G networks. Your DPG must work even when the internet fails."
+    },
+    "E_VC_03": {
+      "title": "Government Interest",
+      "description": "The Ministry of Health has noticed your project and wants to collaborate. They offer help with pilot testing."
+    }
+  },
+
+  "projects": {
+    "P_VC_1_1": {
+      "text": "Interview 20 villagers to understand their needs.",
+      "fit": 2, "market": 1, "dev": 0, "cost": -5000
+    },
+    "P_VC_1_2": {
+      "text": "Use only hospital records and skip field interviews.",
+      "fit": -1, "market": 0, "dev": 2, "cost": 0
+    },
+    "P_VC_1_3": {
+      "text": "Conduct full UX-research with NGO support.",
+      "fit": 3, "market": 2, "dev": 0, "cost": -10000
+    },
+    "P_VC_1_4": {
+      "text": "Skip research and begin development right away.",
+      "fit": -3, "market": 0, "dev": 2, "cost": 0
+    },
+
+    "P_VC_2_1": {
+      "text": "Design offline-first architecture for poor connectivity.",
+      "fit": 3, "market": 1, "dev": -2, "cost": 0
+    },
+    "P_VC_2_2": {
+      "text": "Use a cloud-based model for faster development.",
+      "fit": -2, "market": 0, "dev": 2, "cost": -3000
+    },
+    "P_VC_2_3": {
+      "text": "Add SMS-based consultations for remote users.",
+      "fit": 2, "market": 3, "dev": 0, "cost": -5000
+    },
+    "P_VC_2_4": {
+      "text": "Include video-calling as a premium feature.",
+      "fit": -1, "market": 1, "dev": -3, "cost": 0
+    },
+
+    "P_VC_3_1": {
+      "text": "Pilot VillageCare in two villages with government support.",
+      "fit": 1, "market": 3, "dev": 0, "cost": -8000
+    },
+    "P_VC_3_2": {
+      "text": "Partner with an NGO to provide volunteer doctors.",
+      "fit": 3, "market": 2, "dev": 0, "cost": -5000
+    },
+    "P_VC_3_3": {
+      "text": "Release the app publicly without piloting.",
+      "fit": 0, "market": -1, "dev": 2, "cost": 0
+    },
+    "P_VC_3_4": {
+      "text": "Conduct training workshops for local nurses.",
+      "fit": 4, "market": 1, "dev": 0, "cost": -7000
+    }
+  },
+
   "phases": [
     {
       "id": "PH_VC_01",
       "name": "Discovery Phase",
-      "choices": ["P_VC_1_1", "P_VC_1_2", "P_VC_1_3", "P_VC_1_4"],
-      "eventId": "E_VC_01"
+      "eventId": "E_VC_01",
+      "choices": ["P_VC_1_1", "P_VC_1_2", "P_VC_1_3", "P_VC_1_4"]
     },
     {
       "id": "PH_VC_02",
       "name": "Development Phase",
-      "choices": ["P_VC_2_1", "P_VC_2_2", "P_VC_2_3", "P_VC_2_4"],
-      "eventId": "E_VC_02"
+      "eventId": "E_VC_02",
+      "choices": ["P_VC_2_1", "P_VC_2_2", "P_VC_2_3", "P_VC_2_4"]
     },
     {
       "id": "PH_VC_03",
       "name": "Partnership & Deployment",
-      "choices": ["P_VC_3_1", "P_VC_3_2", "P_VC_3_3", "P_VC_3_4"],
-      "eventId": "E_VC_03"
+      "eventId": "E_VC_03",
+      "choices": ["P_VC_3_1", "P_VC_3_2", "P_VC_3_3", "P_VC_3_4"]
     }
   ]
 }
